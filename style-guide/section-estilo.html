@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Material Didático Digital Acessível a Pessoas com Deficiência Visual</title>
+  <meta name="description" content="Style guide and pattern library promoting accessible components and WCAG compliance criteria">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+  <link rel="stylesheet" href="../all/exemplos.css">
+
+</head>
+
+<body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Avançar para o conteúdo principal
+  </a>
+
+  <div class="kss-wrapper">
+    <div class="kss-sidebar">
+
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <p class="kss-doc-title visuallyhidden">
+            Material Didático Digital Acessível a Pessoas com Deficiência Visual
+          </p>
+          <div class="site-logo">
+              <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 715.23 364.5"><title id="logo-title">Marca do Material Didático Digital Acessível</title><desc id="description">Círculo vermelho com barra inclinada para a direita sobreposta a ela. A esquerda do círculo, sinal de 'menor que'. A direita, sinal de 'maior que'.</desc><path d="M357.26,52.07A130.18,130.18,0,1,0,487.44,182.25,130.18,130.18,0,0,0,357.26,52.07Zm0,208.29a78.11,78.11,0,1,1,78.11-78.11A78.11,78.11,0,0,1,357.26,260.36Z" transform="translate(0.28)" style="fill:#036"/><polygon points="715.08 156.22 506.79 52.07 506.79 104.14 663.01 182.25 506.79 260.36 506.79 312.43 715.08 208.29 715.08 156.22" style="fill:#036"/><polygon points="0 156.22 208.29 52.07 208.29 104.14 52.07 182.25 208.29 260.36 208.29 312.43 0 208.29 0 156.22" style="fill:#036"/><polygon points="474.84 0 422.76 0 240.51 364.5 292.58 364.5 474.84 0" style="fill:#06c"/><polygon points="715.23 208.42 507.23 104.42 507.23 52.42 715.23 156.42 715.23 208.42" style="fill:#06c"/><polygon points="208.23 312.42 0.23 208.42 0.23 156.42 208.23 260.42 208.23 312.42" style="fill:#06c"/>
+          </div>
+        </header>
+
+        <nav class="kss-nav" aria-label="Style Guide">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Ocultar navegação
+            </span>
+          </button>
+
+          <div class="navbar-mobile-icon">
+            <button class="menu-toggle" id="toggle-menu" aria-expanded="false">
+              <span>Menu</span>
+                <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 715.23 364.5"><title id="logo-title">Marca do Material Didático Digital Acessível</title><desc id="description">Círculo vermelho com barra inclinada para a direita sobreposta a ela. A esquerda do círculo, sinal de 'menor que'. A direita, sinal de 'maior que'.</desc><path d="M357.26,52.07A130.18,130.18,0,1,0,487.44,182.25,130.18,130.18,0,0,0,357.26,52.07Zm0,208.29a78.11,78.11,0,1,1,78.11-78.11A78.11,78.11,0,0,1,357.26,260.36Z" transform="translate(0.28)" style="fill:#036"/><polygon points="715.08 156.22 506.79 52.07 506.79 104.14 663.01 182.25 506.79 260.36 506.79 312.43 715.08 208.29 715.08 156.22" style="fill:#036"/><polygon points="0 156.22 208.29 52.07 208.29 104.14 52.07 182.25 208.29 260.36 208.29 312.43 0 208.29 0 156.22" style="fill:#036"/><polygon points="474.84 0 422.76 0 240.51 364.5 292.58 364.5 474.84 0" style="fill:#06c"/><polygon points="715.23 208.42 507.23 104.42 507.23 52.42 715.23 156.42 715.23 208.42" style="fill:#06c"/><polygon points="208.23 312.42 0.23 208.42 0.23 156.42 208.23 260.42 208.23 312.42" style="fill:#06c"/>                <g class="svg-menu-toggle">
+                  <path class="line line-1" d="M5 13h90v14H5z"/>
+                  <path class="line line-2" d="M5 43h90v14H5z"/>
+                  <path class="line line-3" d="M5 73h90v14H5z"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="index.html"><span class="kss-ref">1</span><span class="kss-name">Apresentação</span></a></li>
+                        <li class="kss-menu-item">
+              <a href="section-diretrizes.html"><span class="kss-ref">2</span><span class="kss-name">Diretrizes</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-estrutura.html"><span class="kss-ref">3</span><span class="kss-name">Estrutura</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-estilo.html"><span class="kss-ref">4</span><span class="kss-name">Estilo</span></a>               
+                  <ul class="kss-menu-child">
+                  <li class="kss-menu-item">
+                  <a href="#kssref-estilo-tipografia">
+                        <span class="kss-ref ">4.1</span>
+                        <span class="kss-name">Tipografia</span>
+                      </a>
+                  </li>
+                  <li class="kss-menu-item">
+                      <a href="#kssref-estilo-cor">
+                        <span class="kss-ref ">4.2</span>
+                        <span class="kss-name">Cores</span>
+                      </a>
+                  </li>
+                  <li class="kss-menu-item">
+                      <a href="#kssref-estilo-lista">
+                        <span class="kss-ref ">4.3</span>
+                        <span class="kss-name">Listas</span>
+                      </a>
+                  </li>
+                  <li class="kss-menu-item">
+                      <a href="#kssref-estilo-tabela">
+                        <span class="kss-ref ">4.4</span>
+                        <span class="kss-name">Tabelas</span>
+                      </a>
+                  </li>
+                  <li class="kss-menu-item">
+                      <a href="#kssref-estilo-nota">
+                        <span class="kss-ref ">4.5</span>
+                        <span class="kss-name">Notas adicionais</span>
+                      </a>
+                  </li>
+                  <li class="kss-menu-item">
+                      <a href="#kssref-estilo-atividade">
+                        <span class="kss-ref ">4.6</span>
+                        <span class="kss-name">Atividades</span>
+                      </a>
+                  </li>
+                  <li class="kss-menu-item">
+                    <a href="#kssref-estilo-imagem">
+                          <span class="kss-ref ">4.7</span>
+                          <span class="kss-name">Imagem</span>
+                        </a>
+                    </li>
+                    <li class="kss-menu-item">
+                        <a href="#kssref-estilo-audio">
+                          <span class="kss-ref ">4.8</span>
+                          <span class="kss-name">Áudio</span>
+                        </a>
+                    </li>
+                    <li class="kss-menu-item">
+                        <a href="#kssref-estilo-video">
+                          <span class="kss-ref ">4.9</span>
+                          <span class="kss-name">Vídeo</span>
+                        </a>
+                    </li>
+                              </ul>
+                          </li>
+                          <li class="kss-menu-item">
+                <a href="section-referencias.html"><span class="kss-ref">5</span><span class="kss-name">Referências</span></a>             </li>
+                      </ul>
+        </nav>
+
+      </div>
+      <!-- /.kss-sidebar-inner -->
+
+    </div>
+    <!-- /.kss-sidebar -->
+
+    <main id="kss-main-content" class="kss-content" aria-label="content">
+      <article class="kss-article">
+
+<!-- COMEÇA AQUI! -->
+
+            <div id="kssref-estilo" class="kss-section kss-depth-1">
+              <div class="kss-style">
+                <h1 class="kss-title kss-title--level-1">
+                  <a class="kss-title__permalink" href="#kssref-estilo">
+                    Estilo
+                  </a>
+                </h1>
+              </div>
+            </div>
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-tipografia" class="kss-section kss-depth-2">
+<div class="kss-style">
+<h2 class="kss-title kss-title--level-2">
+<a class="kss-title__permalink" href="#kssref-estilo-tipografia">Tipografia</a>
+</h2>
+
+<div class="kss-description">
+<p>Para materiais didáticos digitais em hipertexto, recomenda-se o uso de valores relativos para elementos textuais, de modo a torná-lo flexível a diversos tamanhos de tela. É indicado também adotar no máximo duas famílias tipográficas: uma para títulos e subtítulos e outra para textos de parágrafos. Para privilegiar a legibilidade do texto, sugere-se trabalhar com fontes desenvolvidas para exibição em tela, bem como evitar variações em itálico. Fontes rebuscadas, como aquelas que simulam escrita cursiva, devem ser evitadas.</p>
+<p>Para parágrafos, o texto deve favorecer à legibilidade e conforto visual, considerando o tempo total que o usuário passará lendo diante da tela. Sendo assim, é indicado formatação de texto com corpo de texto mínimo de 12 pontos, entrelinhamento mínimo de uma vez e meia o corpo da fonte e espaçamento mínimo entre parágrafos de duas vezes o tamanho do corpo de texto. Recomenda-se também usar alinhamento de texto à esquerda e limitar a 80 caracteres por linha. Além disso, deve-se evitar parágrafos longos.</p>
+
+<h3 style="margin-bottom: 1em">Exemplo de uso de cabeçalhos</h3>
+
+<section class="headings-section">
+  <div>
+    <h1>Cabeçalho nível 1</h1>
+    <h2>Cabeçalho nível 2</h2>
+    <h3>Cabeçalho nível 3</h3>
+    <h4>Cabeçalho nível 4</h4>
+    <h5>Cabeçalho nível 5</h5>
+    <h6>Cabeçalho nível 6</h6>
+  </div>
+</section>
+
+<div class="break"></div>
+
+<h3 style="margin-bottom: 1em">Exemplos de tipografia adequada, utilizando fonte "Arial"</h3>
+
+<p class="tipografia-bom">Caros amigos, o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das diretrizes de desenvolvimento para o futuro. Desta maneira, o entendimento das metas propostas oferece uma interessante oportunidade para verificação do remanejamento dos quadros funcionais. Ainda assim, existem dúvidas a respeito de como a estrutura atual da organização auxilia a preparação e a composição dos paradigmas corporativos. </p>
+
+<div class="break"></div>
+
+<h3 style="margin-bottom: 1em">Exemplos de tipografia inadequada, utilizando fonte "Impact"</h3>
+
+<p class="tipografia-ruim">Caros amigos, o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das diretrizes de desenvolvimento para o futuro. Desta maneira, o entendimento das metas propostas oferece uma interessante oportunidade para verificação do remanejamento dos quadros funcionais. Ainda assim, existem dúvidas a respeito de como a estrutura atual da organização auxilia a preparação e a composição dos paradigmas corporativos. </p>
+
+<section data-action="aria-toggle" class="atblock">
+<h3 class="atblock__title">
+<a href="#tipografia_res">Diretrizes consultadas</a>
+</h3>
+<div id="tipografia_res" class="atblock__panel">
+<ul>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#meaning" target="_blank">WCAG 2.0 Diretriz 3.1</a></li>
+<li><a href="http://kb.daisy.org/publishing/docs/html/emphasis.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Bolding and Italics)</span></a></li>
+<li><a href="http://kb.daisy.org/publishing/docs/html/headings.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Headings)</span></a></li>
+<li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 2.2</span></a></li>
+<li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 3.1</span></a></li>
+<li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 3.2</span></a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.3" target="_blank">eMAG Recomendação 3.11</a></li>
+</ul>
+</div>
+</section>
+
+</div>
+</section>
+
+<!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-cor" class="kss-section kss-depth-2">
+<div class="kss-style">
+<h2 class="kss-title kss-title--level-2">
+<a class="kss-title__permalink" href="#kssref-estilo-cor">Cores</a>
+</h2>
+
+<div class="kss-description">
+<p>O uso de cores é fundamental para enriquecer o conteúdo em qualquer material didático, além de funcionar como elemento para destacar para determinada informação, porém é recomendável evitar seu uso como único meio para diferenciação. A informação embutida na paleta de cores de um texto ou de um diagrama perdem totalmente seu propósito para pessoas com deficiência visual, ou é comprometida em casos na qual o leitor apresenta alteração no espectro visual, como daltonismo. Para tal, é recomendável combinar cores com elementos textuais e imagéticos, como textos e ícones.</p>
+<p>Sobre combinação de cores, o contraste gerado entre o conteúdo e plano de fundo deve favorecer a legibilidade, principalmente para pessoas com baixa visão e daltonismo. De acordo com a W3C, o contraste mínimo recomendado é de 4,5.1 (leia-se “quatro vírgula cinco para um”) e contraste mínimo de 7:1 para versões em alto contraste. Para o profissional que irá desenvolver materiais didáticos digitais, cálculos de contraste podem ser efetuados através de ferramentas online como a Contrast Checker, da W3C. Para planos de fundo, recomenda-se também evitar texturas e gradientes.</p>
+<p>Materiais didáticos digitais baseados em hipertexto devem oferecer recurso de esquema de cores, com paletas de cores pré-definidas, adequadas a usuário com baixa visão ou com anomalias como daltonismo e fotofobia. Tal recurso torna a leitura mais confortável a esses usuários. As paletas de cores devem apresentar relação de contraste mínima de 7:1, conforme sugestão da WCAG.</p>
+
+<h3 class="titulo-exemplo">Exemplo de texto em fundo claro:</h3>
+
+<section class="box-exemplo-claro">
+<p class="tipografia-bom">Caros amigos, o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das diretrizes de desenvolvimento para o futuro. Desta maneira, o entendimento das metas propostas oferece uma interessante oportunidade para verificação do remanejamento dos quadros funcionais. Ainda assim, existem dúvidas a respeito de como a estrutura atual da organização auxilia a preparação e a composição dos paradigmas corporativos. </p>
+</section>
+
+<h3 class="titulo-exemplo">Exemplo de texto em fundo escuro:</h3>
+
+<section class="box-exemplo-escuro">
+<p class="tipografia-bom-branco">Caros amigos, o consenso sobre a necessidade de qualificação agrega valor ao estabelecimento das diretrizes de desenvolvimento para o futuro. Desta maneira, o entendimento das metas propostas oferece uma interessante oportunidade para verificação do remanejamento dos quadros funcionais. Ainda assim, existem dúvidas a respeito de como a estrutura atual da organização auxilia a preparação e a composição dos paradigmas corporativos. </p>
+</section>
+
+<section data-action="aria-toggle" class="atblock">
+<h3 class="atblock__title">
+<a href="#cor_res">Diretrizes consultadas</a>
+</h3>
+<div id="cor_res" class="atblock__panel">
+<ul>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#content-structure-separation" target="_blank">WCAG 2.0 Diretriz 1.3</a></li>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#visual-audio-contrast" target="_blank">WCAG 2.0 Diretriz 1.4</a></li>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#meaning" target="_blank">WCAG 2.0 Diretriz 3.1</a></li>
+<li><a href="http://kb.daisy.org/publishing/docs/css/color.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Color)</span></a></li>
+<li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 3.1</span></a></li>
+<li><a href="http://udlguidelines.cast.org/representation/perception/customize-display" target="_blank"><span lang="en">UDL Guidelines Checkpoint 1.1</span></a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.4" target="_blank">eMAG Recomendação 4.2</a></li>
+</ul>
+</div>
+</section>
+
+</div>
+</div>
+</section>
+
+<!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-lista" class="kss-section kss-depth-2">
+<div class="kss-style">
+<h2 class="kss-title kss-title--level-2">
+<a class="kss-title__permalink" href="#kssref-estilo-lista">Listas</a>
+</h2>
+
+<div class="kss-description">
+<p>Elementos textuais recorrentes em materiais didáticos, como listas numeradas e não-numeradas, além de citações, devem ser identificadas em código ou rotuladas textualmente, de modo a serem identificadas por leitores de tela.</p>
+
+<h3>Exemplo de lista numerada</h3>
+<section class="lists-section1">
+  <h3>Maiores bilheterias do cinema:</h3>
+  <ol>
+    <li>Avatar (2009)</li>
+    <li>Vingadores: Ultimato</li>
+    <li>Titanic</li>
+    <li>Star Wars: O Despertar da Força</li>
+    <li>Vingadores: Guerra Infinita</li>
+  </ol>
+</section>
+<div class="break"></div>
+<h3>Exemplo de lista não-numerada</h3>
+<section class="lists-section2">
+  <h3>Frutas tropicais:</h3>
+  <ul>
+    <li>Abacaxi</li>
+    <li>Cajá</li>
+    <li>Caju</li>
+    <li>Goiaba</li>
+    <li>Graviola</li>
+    <li>Manga</li>
+    <li>Maracujá</li>
+    <li>Mamão</li>
+  </ul>
+</section>
+
+<section data-action="aria-toggle" class="atblock">
+<h3 class="atblock__title">
+<a href="#lista_res">Diretrizes consultadas</a>
+</h3>
+<div id="lista_res" class="atblock__panel">
+<ul>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#content-structure-separation" target="_blank">WCAG 2.0 Diretriz 1.3</a></li>
+<li><a href="http://kb.daisy.org/publishing/docs/html/lists.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Lists)</span></a></li>
+<li><a href="http://udlguidelines.cast.org/representation/perception/customize-display" target="_blank"><span lang="en">UDL Guidelines Checkpoint 1.1</span></a></li>
+<li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 3.1</span></a></li>
+</ul>
+</div>
+</section>
+
+</div>
+</div>
+</section>
+    
+<!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-tabela" class="kss-section kss-depth-2">
+    <div class="kss-style">
+    <h2 class="kss-title kss-title--level-2">
+    <a class="kss-title__permalink" href="#kssref-estilo-tabela">Tabelas</a>
+    </h2>
+    
+<div class="kss-description">
+<p>Para apresentação de dados tabulares, como quadros e tabelas, recomenda-se elaborá-los com poucas linhas e colunas, além de utilizar recursos visuais como contorno e preenchimento de células para favorecer a legibilidade e realçar dados específicos. Deve-se também identificar, através de marcadores textuais ou em código, títulos e descrições de tabelas.</p>
+    
+    <section class="tables-section">
+        <h3 style="margin-bottom: 1em">Exemplo de tabela</h3>
+        <table class="responsive-table" id="responsive-tableID">
+          <thead>
+            <tr align="center">
+              <th class="responsive">Nome</th>
+              <th class="responsive">Identidade</th>
+              <th class="responsive">Origem</th>
+              <th class="responsive">Poderes</th>
+              <th class="responsive">Inimigos</th>
+              <th class="responsive">Vínculos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="responsive">Homem de Ferro</td>
+              <td class="responsive">Tony Stark</td>
+              <td class="responsive">Terra (Estados Unidos)</td>
+              <td class="responsive">Traje tecnológico que voa e dispara projéteis</td>
+              <td class="responsive">Mandarim, Hydra, Ultron, Thanos</td>
+              <td class="responsive">Vingadores, SHIELD e Illuminatis</td>
+            </tr>
+            <tr>
+              <td class="responsive">Capitão América</td>
+              <td class="responsive">Steve Rogers</td>
+              <td class="responsive">Terra (Estados Unidos)</td>
+              <td class="responsive">Superforça, rapidez e fator de cura</td>
+              <td class="responsive">Caveira Vermelha, Hydra, Thanos</td>
+              <td class="responsive">Vingadores, SHIELD</td>
+            </tr>
+            <tr>
+              <td class="responsive">Thor</td>
+              <td class="responsive">Thor Odinson</td>
+              <td class="responsive">Asgard</td>
+              <td class="responsive">Superforça e gerar raios e trovões; manipula o Mjornir</td>
+              <td class="responsive">Loki, Malekith, Hela, Thanos</td>
+              <td class="responsive">Vingadores, Guardiões da Galáxia</td>
+            </tr>
+            <tr>
+              <td class="responsive">Hulk</td>
+              <td class="responsive">Bruce Banner</td>
+              <td class="responsive">Terra (Estados Unidos)</td>
+              <td class="responsive">Superforça</td>
+              <td class="responsive">Thanos, Coronel Ross</td>
+              <td class="responsive">Vingadores</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    
+    <section data-action="aria-toggle" class="atblock">
+    <h3 class="atblock__title">
+    <a href="#tabela_res">Diretrizes consultadas</a>
+    </h3>
+    <div id="tabela_res" class="atblock__panel">
+    <ul>
+    <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#content-structure-separation" target="_blank">WCAG 2.0 Diretriz 1.3</a></li>
+    <li><a href="http://kb.daisy.org/publishing/docs/html/sections.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Tables)</span></a></li>
+    <li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 3.1</span></a></li>
+    <li><a href="http://emag.governoeletronico.gov.br/#s3.3" target="_blank">eMAG Recomendação 3.9</a></li>
+    <li><a href="http://emag.governoeletronico.gov.br/#s3.3" target="_blank">eMAG Recomendação 3.10</a></li>
+    </ul>
+    </div>
+    </section>
+    
+    </div>
+    </div>
+</section>
+    
+<!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-nota" class="kss-section kss-depth-2">
+    <div class="kss-style">
+    <h2 class="kss-title kss-title--level-2">
+    <a class="kss-title__permalink" href="#kssref-estilo-nota">Notas adicionais</a>
+    </h2>
+    
+    <div class="kss-description">
+    <p>Fragmentos textuais que trazem informações adicionais à redação principal como notas de rodapé, notas explicativas, glossário ou qualquer outra informação extra deve ser alocada em pontos que não interfiram na compreensão do conteúdo principal. Tais itens podem ficar no fim do parágrafo, no fim do capítulo ou no fim do texto. Para cara nota adicional, deve haver um atalho correspondente que facilite ao leitor a consulta.</p>
+    <p>Embora não haja um consenso, muitos leitores cegos que utilizam leitores de tela defendem que tais notas devem vir ao final da obra, de modo a não prejudicar a leitura do texto principal. Por outro lado, a Accessible Publishing Knowledge Base recomenda que notas de rodapé e notas de fim devem vir em quebras no texto, buscando minimizar o impacto na leitura do conteúdo primário. Considerando isso, cabe ao profissional definir no projeto onde posicionais tais notas, tomando cuidado para preservar a sequência lógica de leitura.</p>
+    
+    <h3 style="margin-bottom: 1em">Exemplo</h3>
+    <p style="font-style: italic">Eis um exemplo de parágrafo com uma <a href="#nota-rodape">nota adicional[1]</a>. Ao clicar no termo, através de um atalho, o aluno será levado ao parágrafo, contendo uma explicação mais detalhada. Esse recurso pode ser aplicado para notas na mesma página ou na página final do material didático.</p>
+        
+    <section data-action="aria-toggle" class="atblock">
+    <h3 class="atblock__title">
+    <a href="#nota_res">Diretrizes consultadas</a>
+    </h3>
+    <div id="nota_res" class="atblock__panel">
+    <ul>
+    <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#content-structure-separation" target="_blank">WCAG 2.0 Diretriz 1.3</a></li>
+    <li><a href="http://kb.daisy.org/publishing/docs/html/notes.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Footnotes and Endnotes)</span></a></li>
+    <li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span lang="en">Round Table Guidelines for Producing Accessible E-text item 2.1</span></a></li>
+    <li><a href="http://udlguidelines.cast.org/representation/language-symbols/vocabulary-symbols" target="_blank"><span lang="en">UDL Guidelines Checkpoint 2.1</span></a></li>
+    </ul>
+    </div>
+    </section>
+    
+    </div>
+    </div>
+    </section>
+    
+<!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-atividade" class="kss-section kss-depth-2">
+    <div class="kss-style">
+    <h2 class="kss-title kss-title--level-2">
+    <a class="kss-title__permalink" href="#kssref-estilo-atividade">Atividades</a>
+    </h2>
+    
+    <div class="kss-description">
+    <p>Eventualmente, o material didático digital pode conter atividades de aprendizagem como questões abertas, para reflexão e exercícios práticos com correção automatizada. Nesse contexto, instruções para as atividades devem ser apresentadas textualmente, visíveis a tecnologias assistivas. Além disso, os campos para preenchimento de respostas, bem como botões, devem ser rotulados em código ou textualmente, de modo que pessoas que navegam por teclado consigam interagir com os objetos. É recomendável também que o material forneça respostas sobre os dados inseridos pelo usuário na atividade. Um exemplo é caixa de texto que surge, informando se a resposta dada está correta.</p>
+    
+    <section class="text-inputs-section">
+        <form>
+          <label for="first-name">Nome</label>
+          <input id="first-name" type="text" name="textfield">
+          <label for="last-name" class="required-field">Sobrenome</label>
+          <input id="last-name" type="text" name="textfield" aria-describedby="required-message" required>
+          <div id="required-message" class="visuallyhidden">Campo obrigatório.</div>
+          <label for="username">Nome de usuário</label>
+          <input id="username" type="text" name="textfield" aria-describedby="username-help-text" aria-invalid="true">
+          <span id="username-help-text" role="alert">Erro de preenchimento no campo acima, com moldura na cor vermelha.</span>
+          <label for="city">Cidade</label>
+          <input id="city" type="text" name="textfield" aria-describedby="city-help-text" aria-invalid="false">
+          <span id="city-help-text" role="alert">Dado preenchido corretamente, com moldura na cor verde.</span>
+          <label for="address">Endereço</label>
+          <textarea id="address" name="addresstext"></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+
+      <section class="radio-buttons-section">
+        <h3 style="margin-bottom: 1em">Atividade de escolha única</h3>
+        <fieldset>
+          <legend>Ano que Pedro Álvares Cabral chegou ao Brasil</legend>
+          <div class="radio row">
+            <input type="radio" name="year" id="1500" value="1500"/>
+            <label for="1500">1500</label>
+            <input type="radio" name="year" id="1822" value="1822"/>
+            <label for="1822">1822</label>
+            <input type="radio" name="year" id="1970" value="1970"/>
+            <label for="1970">1970</label>
+            <input type="radio" name="year" id="2019" value="2019"/>
+            <label for="2019">2019</label>
+          </div>
+        </fieldset>
+        </section>
+    
+    <section class="checkboxes-section">
+        <h3 style="margin-bottom: 1em">Atividade de múltipla escolha</h3>
+        <fieldset>
+          <legend>Times de futebol do Brasil</legend>
+          <div class="checkbox column">
+            <input id="corinthians" type="checkbox" name="time" value="corinthians"/>
+            <label for="corinthians">Corinthians</label>
+            <input id="realmadrid" type="checkbox" name="time" value="realmadrid"/>
+            <label for="realmadrid">Real Madrid</label>
+            <input id="flamengo" type="checkbox" name="time" value="flamengo"/>
+            <label for="flamengo">Flamengo</label>
+            <input id="botafogo" type="checkbox" name="time" value="botafogo"/>
+            <label for="botafogo">Botafogo</label>
+            <input id="barcelona" type="checkbox" name="time" value="barcelona"/>
+            <label for="barcelona">Barcelona</label>
+            <input id="palmeiras" type="checkbox" name="time" value="palmeiras"/>
+            <label for="palmeiras">Palmeiras</label>
+          </div>
+        </fieldset>
+    
+<section data-action="aria-toggle" class="atblock">
+<h3 class="atblock__title">
+<a href="#atividade_res">Diretrizes consultadas</a>
+</h3>
+<div id="atividade_res" class="atblock__panel">
+<ul>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#content-structure-separation" target="_blank">WCAG 2.0 Diretriz 1.3</a></li>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#time-limits" target="_blank">WCAG 2.0 Diretriz 2.2</a></li>
+<li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#minimize-error" target="_blank">WCAG 2.0 Diretriz 3.3</a></li>
+<li><a href="http://kb.daisy.org/publishing/docs/html/forms.html" target="_blank"><span lang="en">Accessible Publishing Knowledge Base (Forms)</span></a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.6" target="_blank">eMAG Recomendação 6.1</a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.6" target="_blank">eMAG Recomendação 6.2</a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.6" target="_blank">eMAG Recomendação 6.4</a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.6" target="_blank">eMAG Recomendação 6.5</a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.6" target="_blank">eMAG Recomendação 6.6</a></li>
+<li><a href="http://emag.governoeletronico.gov.br/#s3.6" target="_blank">eMAG Recomendação 6.7</a></li>
+</ul>
+</div>
+</section>
+
+</div>
+</div>
+</section>
+    
+<!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- SUBTÍTULO COMEÇA AQUI! -->
+
+<section id="kssref-estilo-imagem" class="kss-section kss-depth-2">
+  <div class="kss-style">
+  <h2 class="kss-title kss-title--level-2">
+  <a class="kss-title__permalink" href="#kssref-estilo-imagem">Imagem</a>
+  </h2>
+  
+  <div class="kss-description">
+  <p>Imagens contidas em materiais didáticos, bem como conteúdos educacionais em linguagem visual, como infográficos e histórias em quadrinhos, devem fornecer texto alternativo, de modo que usuários com leitores de tela possam “ler” o conteúdo das imagens. Essas descrições de imagens devem ser objetivas e sucintas, informando sobre o conteúdo ou a ação existente na figura. Imagens decorativas, que não fazem parte do conteúdo do material, devem ser descritas como tal.</p>
+  <p>Figuras contidas em materiais didáticos em hipermídia devem oferecer versão em tamanho ampliado, de modo que pessoas com baixa visão possam observar detalhes contidos em tais figuras, principalmente em gráficos, tabelas e diagramas, que apresentam informações em texto. Assim para textos, algumas recomendações devem ser observadas também na elaboração de imagens: atenção ao contraste entre primeiro plano e fundo e escolha de fontes que favoreçam a legibilidade.</p>
+  <p>Expressões matemáticas são elementos recorrentes em materiais didáticos de disciplinas como Física, Matemática e Química e demandam cuidado, pois requer o domínio de ferramentas específicas, como editores LaTeX. Algumas diretrizes recomendam o uso da linguagem MathML, uma derivação do HTML voltada para esse fim. Todavia, por se tratar de uma linguagem ainda em desenvolvimento, muitos navegadores e leitores ainda não apresentam suporte a MathML. Nesse caso, recomenda-se inserir imagem da equação, acompanhada de descrição por extenso da expressão. </p>
+  <p>Dando preferência a soluções já resolvidas, como já apontou Souza (2013), recomenda-se utilizar imagens para inserção de expressões matemáticas. Na internet já existem ferramentas online gratuitas para renderização de fórmulas matemáticas, que permitem a exportação como arquivos de imagem (PNG e SVG). Assim como outros tipos de imagens, deve-se inserir descrição da expressão matemática, com atenção ao contexto, já que símbolos e expressões apresentam diferentes interpretações, como números subscritos, que tem diferentes conotações na Matemática e na Química.</p>
+  
+  <section class="images-section">
+  
+  <h3 style="margin-bottom: 1em">Exemplo de imagem, com descrição de imagem embutida no código, mas legível ao leitor de tela.</h3>
+  
+  <div class="images"><img src="../assets/snail.jpg" alt="Um pequeno caracol descansa sobre um cogumelo cinza. Ao fundo, musgo verde."></div>
+  
+  <blockquote>Descrição: Um pequeno caracol descansa sobre um cogumelo cinza. Ao fundo, musgo verde.</blockquote>
+  
+  <h3 style="margin-bottom: 1em">Exemplo de infográfico. Ao clicar sobre a imagem, abre uma versão da imagem em maior resolução</h3>
+  
+  <div class="images" style="max-height: 100%; border: 0"><a href="../assets/mdda_infografico_full.png"><img src="../assets/mdda_infografico.png" alt="Infográfico, em formato circular dividido concentricamente em sete partes, descrevendo o processo de produção de materiais didáticos na SEDIS/UFRN. Cada parte, numerada de 1 a 7, apresenta títulos: identificação, demanda, escrita, consultoria, revisão, adaptação e envio. Abaixo e a esquerda do infográfico, caixa de texto: acompanhamento."></a></div>
+  
+  <blockquote>Descrição: Infográfico em formato circular dividido concentricamente em sete partes, descreve o processo de produção de materiais didáticos na SEDIS/UFRN. Cada parte, numerada de 1 a 7, apresenta títulos: identificação, demanda, escrita, consultoria, revisão, adaptação e envio. Abaixo e a esquerda do infográfico, caixa de texto: "acompanhamento".</blockquote>
+  
+  <h3 style="margin-bottom: 1em">Exemplo de fórmula matemática</h3>
+  
+  <div class="images" style="border: 0"><img src="../assets/mdda_bhaskara.svg" alt="Fórmula de Bháskara. X igual menos B mais ou menos raiz quadrada de B ao quadrado menos quatro vezes A vezes C, sobre dois vezes A."></div>
+  
+  <blockquote>Descrição: Fórmula de Bháskara. X igual menos B mais ou menos raiz quadrada de B ao quadrado menos quatro vezes A vezes C, sobre dois vezes A.</blockquote>
+  
+  </section>
+  
+  </div>
+  
+  <section data-action="aria-toggle" class="atblock">
+  <h3 class="atblock__title">
+  <a href="#imagem_res">Diretrizes consultadas</a>
+  </h3>
+  <div id="imagem_res" class="atblock__panel">
+  <ul>
+  <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#text-equiv" target="_blank">WCAG 2.0 Diretriz 1.1</a></li>
+  <li><a href="http://kb.daisy.org/publishing/docs/html/images.html" target="_blank"><span xml:lang="en">Accessible Publishing Knowledge Base (Images)</span></a></li>
+  <li><a href="http://kb.daisy.org/publishing/docs/html/svg.html" target="_blank"><span xml:lang="en">Accessible Publishing Knowledge Base (SVG)</span></a></li>
+  <li><a href="http://kb.daisy.org/publishing/docs/html/mathml.html" target="_blank"><span xml:lang="en">Accessible Publishing Knowledge Base (MathML)</span></a></li>
+  <li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span xml:lang="en">Round Table Guidelines for Producing Accessible E-text item 1.2</span></a></li>
+  <li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span xml:lang="en">Round Table Guidelines for Producing Accessible E-text item 2.2</span></a></li>
+  <li><a href="http://printdisability.org/wp-content/uploads/2018/05/RT_Guidelines_eText_2018_PRINT_-FINAL.pdf" target="_blank"><span xml:lang="en">Round Table Guidelines for Producing Accessible E-text item 3.1</span></a></li>
+  <li><a href="http://udlguidelines.cast.org/representation/perception/alternatives-visual" target="_blank"><span xml:lang="en">UDL Guidelines Checkpoint 1.3</span></a></li>
+  <li><a href="http://udlguidelines.cast.org/representation/language-symbols/text-notation-symbols" target="_blank"><span xml:lang="en">UDL Guidelines Checkpoint 2.3</span></a></li>
+  <li><a href="http://emag.governoeletronico.gov.br/#s3.3" target="_blank">eMAG Recomendação 3.6</a></li>
+  <li><a href="portal.mec.gov.br/docman/abril-2012-pdf/10538-nota-tecnica-21-mecdaisy-pdf" target="_blank">Nota Técnica nº 21/2012</a></li>
+  </ul>
+  </div>
+  </section>
+  
+  </div>
+  </section>
+  
+  <!-- SUBTÍTULO TERMINA AQUI! -->
+  
+  <!-- SUBTÍTULO COMEÇA AQUI! -->
+  
+  <section id="kssref-estilo-audio" class="kss-section kss-depth-2">
+  <div class="kss-style">
+  <h2 class="kss-title kss-title--level-2">
+  <a class="kss-title__permalink" href="#kssref-estilo-audio">Áudio</a>
+  </h2>
+  
+  <div class="kss-description">
+  <p>Materiais didáticos em formato de áudio, como entrevistas e podcasts, devem oferecer alternativa em texto. Embora pessoas com deficiência visual utilizem a audição como primeira alternativa à ausência de visão, em contextos educacionais uma transcrição textual, a ser lido por leitor de tela ou impresso em braile, pode servir como um material de consulta. Tocadores de áudio devem ser controláveis por teclado, dando ao usuário acesso total aos controles de navegação (reprodução, pausa e volume).</p>
+  
+  <h3 style="margin-bottom: 1em">Exemplo</h3>
+  
+  <section class="audio-section">
+  <div class="audio">
+  <audio src="../assets/audio/audio-exemplo.mp3" controls>
+  </audio>
+  <figcaption>
+  <p class="videos__transcript">
+  <a href="../assets/audio/audio-exemplo.txt">Transcrição em texto.</a>
+  </p>
+  </figcaption>
+  </div>
+  </section>
+  
+  <section data-action="aria-toggle" class="atblock">
+  <h3 class="atblock__title">
+  <a href="#audio_res">Diretrizes consultadas</a>
+  </h3>
+  <div id="audio_res" class="atblock__panel">
+  <ul>
+  <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#text-equiv" target="_blank">WCAG 2.0 Diretriz 1.1</a></li>
+  <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#media-equiv" target="_blank">WCAG 2.0 Diretriz 1.2</a></li>
+  <li><a href="http://kb.daisy.org/publishing/docs/html/audio.html" target="_blank"><span xml:lang="en">Accessible Publishing Knowledge Base (Audio)</span></a></li>
+  <li><a href="http://udlguidelines.cast.org/representation/perception/alternatives-auditory" target="_blank"><span xml:lang="en">UDL Guidelines Checkpoint 1.2</span></a></li>
+  <li><a href="http://udlguidelines.cast.org/action-expression/physical-action/assistive-technologies" target="_blank"><span xml:lang="en">UDL Guidelines Checkpoint 4.2</span></a></li>
+  <li><a href="http://emag.governoeletronico.gov.br/#s3.5" target="_blank">eMAG Recomendação 5.2</a></li>
+  <li><a href="http://emag.governoeletronico.gov.br/#s3.5" target="_blank">eMAG Recomendação 5.4</a></li>
+  </ul>
+  </div>
+  </section>
+  
+  </div>
+  </div>
+  
+  
+  <!-- SUBTÍTULO TERMINA AQUI! -->
+  
+  <!-- SUBTÍTULO COMEÇA AQUI! -->
+  
+  <section id="kssref-estilo-video" class="kss-section kss-depth-2">
+  <div class="kss-style">
+  <h2 class="kss-title kss-title--level-2">
+  <a class="kss-title__permalink" href="#kssref-estilo-video">Vídeo</a>
+  </h2>
+  
+  <div class="kss-description">
+  <p>Conteúdos educacionais em vídeo, como videoaulas, documentários, tutoriais, entre outros, pela sua natureza multimodal, devem disponibilizar audiodescrição, recurso de acessibilidade que traduz textualmente todos os elementos visuais contidos na obra. Audiodescrição, como o Guia para Produções Audiovisuais Acessíveis sugere, deve ser inserida na pós-produção na própria obra, como locução. Por outro lado, o eMAG aponta que a descrição de imagem pode ser inserida textualmente. As recomendações para tocadores de áudio são aplicáveis também para reprodutores de vídeo: controle de reprodução acessível por teclado.</p>
+  
+  <h3 style="margin-bottom: 1em">Exemplo</h3>
+  <div class="kss-modifier-block">
+  
+  <div class="kss-modifier kss-modifier-original">
+  <div class="kss-modifier-example">
+  <section class="videos-section">
+  <figure class="videos">
+  <div class="px-video-container" id="myvid">
+  <div class="px-video-img-captions-container">
+  <div class="px-video-captions hide"></div>
+  <video width="640" height="360" poster="../assets/videos/video-exemplo.png" controls>
+  <!-- video files -->
+  <source src="../assets/videos/video-exemplo.mp4" type="video/mp4" />
+  <source src="../assets/videos/video-exemplo.webm" type="video/webm" />
+  
+  <!-- text track file -->
+  <track kind="captions" label="Portuguese captions" src="../assets/videos/video-exemplo.vtt" srclang="pt-br" default />
+  
+  <!-- fallback for browsers that don't support the video element -->
+  <div>
+  <a href="../assets/videos/video-exemplo.mp4">
+  <img src="../assets/videos/video-exemplo.png" width="640" height="360" alt="download video" />
+  </a>
+  </div>
+  </video>
+  </div><!-- end container for captions and video -->
+  <div class="px-video-controls"></div>
+  </div><!-- end video container -->
+  
+  </div><!-- end page wrapper container -->
+  <script src="js/strings.js"></script>
+  <script src="js/px-video.js"></script>
+  
+  <script>
+  
+  // Initialize
+  new InitPxVideo({
+  "videoId": "myvid",
+  "captionsOnDefault": true,
+  "seekInterval": 20,
+  "videoTitle": "Demo video of Read More section using Mac Voice Over tool",
+  "debug": true
+  });
+  
+  </script>
+  </figure>
+  </section>
+  
+  <figcaption>
+    <p class="videos__transcript">
+    <a href="../assets/videos/video-exemplo.txt">Transcrição em texto.</a>
+    </p>
+    <p class="videos__alt-audio">
+    <a href="../assets/videos/video-exemplo.m4a">Trilha de áudio.</a>
+    </p>
+  </figcaption>
+  
+  <section data-action="aria-toggle" class="atblock">
+  <h3 class="atblock__title">
+  <a href="#video_res">Diretrizes consultadas</a></h3>
+  <div id="video_res" class="atblock__panel">
+  <ul>
+  <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#text-equiv" target="_blank">WCAG 2.0 Diretriz 1.1</a></li>
+  <li><a href="https://www.w3.org/Translations/WCAG20-pt-br/#media-equiv" target="_blank">WCAG 2.0 Diretriz 1.2</a></li>
+  <li><a href="http://kb.daisy.org/publishing/docs/html/video.html" target="_blank"><span xml:lang="en">Accessible Publishing Knowledge Base (Video)</span></a></li>
+  <li><a href="http://udlguidelines.cast.org/representation/perception/alternatives-visual" target="_blank"><span xml:lang="en">UDL Guidelines Checkpoint 1.3</span></a></li>
+  <li><a href="http://udlguidelines.cast.org/action-expression/physical-action/assistive-technologies" target="_blank"><span xml:lang="en">UDL Guidelines Checkpoint 4.2</span></a></li>
+  <li><a href="http://emag.governoeletronico.gov.br/#s3.5" target="_blank">eMAG Recomendação 5.1</a></li>
+  <li><a href="http://emag.governoeletronico.gov.br/#s3.5" target="_blank">eMAG Recomendação 5.3</a></li>
+  <li><a href="https://inclusao.enap.gov.br/wp-content/uploads/2018/05/Guia-para-Producoes-Audiovisuais-Acessiveis-com-audiodescricao-das-imagens-1.pdf" target="_blank">Guia para Produções Audiovisuais Acessíveis</a></li>
+  </ul>
+  </div>
+  </section>
+      
+  <!-- SUBTÍTULO TERMINA AQUI! -->
+
+<!-- TERMINA AQUI! -->
+
+<div class="break"></div>
+<div id="nota-rodape">
+  <p style="font-style: italic">[1]Nota de rodapé ao fim da página, com possibilidade de retornar ao ponto do texto na qual parou, <a href="#kssref-estilo-nota">clicando aqui.</a></p>
+</div>
+
+</article>
+</main>
+
+    <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Voltar ao início
+      </span>
+    </a>
+  </div> <!-- /.kss-wrapper -->
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+<script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
+<script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/aria-card-flip.js"></script>
+<script src="../js/aria-switch.js"></script>
+<script src="../js/aria-toggle.js"></script>
+<script src="../js/aria-tooltips.js"></script>
+<script src="../js/back-to-top.js"></script>
+<script src="../js/button-state.js"></script>
+<script src="../js/button.js"></script>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/copy-button.js"></script>
+<script src="../js/jump-link-fix.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/px-video.js"></script>
+<script src="../js/sidebar-slide.js"></script>
+<script src="../js/strings.js"></script>
+<script src="../js/tables.js"></script>
+<script src="../js/tabs.js"></script>
+
+</body>
+
+</html>
